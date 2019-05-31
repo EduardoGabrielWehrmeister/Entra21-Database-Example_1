@@ -4,3 +4,9 @@ C:\Users\65973\source\repos\ExemploBancoDados02\Model\obj\Debug\Model.csprojAsse
 C:\Users\65973\source\repos\ExemploBancoDados02\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\65973\source\repos\ExemploBancoDados02\Model\obj\Debug\Model.dll
 C:\Users\65973\source\repos\ExemploBancoDados02\Model\obj\Debug\Model.pdb
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\bin\Debug\Model.dll
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\bin\Debug\Model.pdb
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\obj\Debug\Model.dll
+C:\Users\65973\Desktop\exemplo-banco-dados02\Model\obj\Debug\Model.pdb

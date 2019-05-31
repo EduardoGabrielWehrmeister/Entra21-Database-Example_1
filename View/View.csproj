@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FilmeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FilmeCadastro.Designer.cs">
+      <DependentUpon>FilmeCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmeEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmeEditar.Designer.cs">
+      <DependentUpon>FilmeEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmeLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmeLista.Designer.cs">
+      <DependentUpon>FilmeLista.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FilmeCadastro.resx">
+      <DependentUpon>FilmeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmeEditar.resx">
+      <DependentUpon>FilmeEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmeLista.resx">
+      <DependentUpon>FilmeLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

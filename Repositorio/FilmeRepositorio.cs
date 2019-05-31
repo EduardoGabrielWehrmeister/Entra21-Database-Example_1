@@ -96,6 +96,7 @@ namespace Repositorio
         }
 
         public void Inserir(Filme filme)
+
         {
             SqlConnection conexao = new SqlConnection();
             conexao.ConnectionString = CadeiaConexao;
@@ -104,7 +105,7 @@ namespace Repositorio
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexao;
 
-            comando.CommandText = @"INSERT INTO filmes (nome, categorai, curtiu, duracao, avaliacao, tem_sequencia) VALUES (@NOME, @CATEGORIA, @CURTIU, @DURACAO, @AVALIACAO, @TEM_SEQUENCIA)";
+            comando.CommandText = @"INSERT INTO filmes (nome, categoria, curtiu, duracao, avaliacao, tem_sequencia) VALUES (@NOME, @CATEGORIA, @CURTIU, @DURACAO, @AVALIACAO, @TEM_SEQUENCIA)";
             comando.Parameters.AddWithValue("@NOME", filme.Nome);
             comando.Parameters.AddWithValue("@CATEGORIA", filme.Categoria);
             comando.Parameters.AddWithValue("@CURTIU", filme.Curtiu);
@@ -115,6 +116,7 @@ namespace Repositorio
             conexao.Close();
 
         }
+
         public void Apagar(int id)
         {
             SqlConnection conexao = new SqlConnection();
@@ -122,6 +124,7 @@ namespace Repositorio
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
             comando.CommandText = "DELETE FROM filmes WHERE id = @ID";
             comando.Parameters.AddWithValue("ID", id);
             comando.ExecuteNonQuery();

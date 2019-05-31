@@ -7,3 +7,12 @@ C:\Users\65973\source\repos\ExemploBancoDados02\Repositorio\obj\Debug\Repositori
 C:\Users\65973\source\repos\ExemploBancoDados02\Repositorio\obj\Debug\Repositorio.csproj.CopyComplete
 C:\Users\65973\source\repos\ExemploBancoDados02\Repositorio\obj\Debug\Repositorio.dll
 C:\Users\65973\source\repos\ExemploBancoDados02\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\bin\Debug\Model.dll
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\bin\Debug\Model.pdb
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\obj\Debug\Repositorio.csprojAssemblyReference.cache
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\obj\Debug\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\obj\Debug\Repositorio.csproj.CopyComplete
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\65973\Desktop\exemplo-banco-dados02\Repositorio\obj\Debug\Repositorio.pdb
