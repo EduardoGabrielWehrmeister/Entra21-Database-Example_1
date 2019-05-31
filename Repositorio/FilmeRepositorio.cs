@@ -16,7 +16,7 @@ namespace Repositorio
          * Método que irá retornar os dados dos 
          * filmes(List<Filme>) da tablea de filmes
          */
-         
+
         public List<Filme> ObterTodos()
         {
             //Cria conexão com banco de datdos e abre.
@@ -62,6 +62,57 @@ namespace Repositorio
             conexao.Close();
             // Retorna a Lista de filmes
             return filmes;
+        }
+
+        public Filme ObterPeloId(int id)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
+
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM filme WHERE id = @ID";
+
+            comando.Parameters.AddWithValue("@ID", id);
+
+            DataTable dataTable = new DataTable();
+            dataTable.Load(comando.ExecuteReader());
+            if (dataTable.Rows.Count == 1)
+            {
+                DataRow linha = dataTable.Rows[0];
+                Filme filme = new Filme();
+                filme.Id = Convert.ToInt32(linha["id"]);
+                filme.Nome = linha["nome"].ToString();
+                filme.Categoria = linha["categoria"].ToString();
+                filme.Curtiu = Convert.ToBoolean(linha["curtiu"]);
+                filme.Duracao = Convert.ToDateTime(linha["duracao"]);
+                filme.Avaliacao = Convert.ToDecimal(linha["avaliacao"]);
+                filme.TemSequencia = Convert.ToBoolean(linha["tem_sequencia"]);
+                return filme;
+            }
+            return null;
+        }
+
+        public void Inserir(Filme filme)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
+
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+
+            comando.CommandText = @"INSERT INTO filmes (nome, categorai, curtiu, duracao, avaliacao, tem_sequencia) VALUES (@NOME, @CATEGORIA, @CURTIU, @DURACAO, @AVALIACAO, @TEM_SEQUENCIA)";
+            comando.Parameters.AddWithValue("@NOME", filme.Nome);
+            comando.Parameters.AddWithValue("@CATEGORIA", filme.Categoria);
+            comando.Parameters.AddWithValue("@CURTIU", filme.Curtiu);
+            comando.Parameters.AddWithValue("@DURACAO", filme.Duracao);
+            comando.Parameters.AddWithValue("@AVALIACAO", filme.Avaliacao);
+            comando.Parameters.AddWithValue("@TEM_SEQUENCIA", filme.TemSequencia);
+            comando.ExecuteNonQuery();
+            conexao.Close();
+
         }
 
 
