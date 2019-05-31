@@ -115,7 +115,6 @@ namespace Repositorio
             conexao.Close();
 
         }
-
         public void Apagar(int id)
         {
             SqlConnection conexao = new SqlConnection();
@@ -128,6 +127,28 @@ namespace Repositorio
             comando.ExecuteNonQuery();
             conexao.Close();
         }
+
+        public void Atualizar(Filme filme)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
+
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = @"UPDATE filmes SET nome = @NOME, categoria = @CATEGORIA, curtiu = @CURTIU, duracao = @DURACAO, avaliacao = @AVALIACAO, tem_sequencia = @TEM_SEQUENCIA WHERE id = @ID";
+            comando.Parameters.AddWithValue("@NOME", filme.Nome);
+            comando.Parameters.AddWithValue("@CATEGORIA", filme.Categoria);
+            comando.Parameters.AddWithValue("@CURTIU", filme.Curtiu);
+            comando.Parameters.AddWithValue("@DURACAO", filme.Duracao);
+            comando.Parameters.AddWithValue("@AVALIACAO", filme.Avaliacao);
+            comando.Parameters.AddWithValue("@TEM_SEQUENCIA", filme.TemSequencia);
+            comando.Parameters.AddWithValue("@ID", filme.Id);
+            comando.ExecuteNonQuery();
+            conexao.Close();
+
+        }
         
+
     }
 }
