@@ -116,6 +116,18 @@ namespace Repositorio
 
         }
 
+        public void Apagar(int id)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
 
+            SqlCommand comando = new SqlCommand();
+            comando.CommandText = "DELETE FROM filmes WHERE id = @ID";
+            comando.Parameters.AddWithValue("ID", id);
+            comando.ExecuteNonQuery();
+            conexao.Close();
+        }
+        
     }
 }
