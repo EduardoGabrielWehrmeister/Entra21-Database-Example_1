@@ -42,7 +42,7 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtAvaliacao
@@ -190,20 +190,20 @@
             this.lblNome.TabIndex = 26;
             this.lblNome.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 31);
-            this.textBox1.TabIndex = 27;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(10, 37);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(263, 31);
+            this.txtNome.TabIndex = 27;
             // 
             // FilmeEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(288, 537);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtAvaliacao);
             this.Controls.Add(this.lblAvaliacao);
@@ -241,6 +241,6 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }
